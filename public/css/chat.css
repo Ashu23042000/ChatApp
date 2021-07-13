@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar {
+    height: 10vh;
+    width: 100vw;
+    background-color: chartreuse;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar_wraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand h2 {
+    font-weight: 100;
+    margin: 12px 0 10px 0;
+}
+
+.navMenu ul li {
+    display: inline-block;
+    margin: 20px 10px 10px 0;
+}
+
+.navMenu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger_navMenu {
+    display: none;
+}
+
+.hamburger_navMenu {
+    display: none;
+    background-color: chartreuse;
+    padding: 1rem;
+}
+
+.hamburger_navMenu li {
+    list-style: none;
+    margin: 1rem;
+}
+
+.hamburger_navMenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.show {
+    display: block;
+}
+
+.main {
+    margin-top: 3rem;
+    border-radius: 5px;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 {
+    width: 20%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.section1 ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.section1 ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.section2 {
+    width: 80%;
+    background-color: rgb(202, 253, 151);
+}
+
+.message_area {
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    overflow-y: scroll;
+}
+
+.new_user {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.outoing_message {
+    float: right;
+    width: 55%;
+    margin-bottom: 20px;
+}
+
+.outoing_message p {
+    background-color: rgb(119, 226, 11);
+    height: auto;
+    padding: 7px 2px 7px 7px;
+    border-radius: 5px;
+}
+
+.outoing_message .user {
+    padding: 7px 2px 7px 7px;
+}
+
+.outoing_message .time {
+    padding: 1px 2px 10px 7px;
+    float: right;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.incoming_message {
+    float: left;
+    margin-bottom: 20px;
+    width: 55%;
+}
+
+.incoming_message .user {
+    padding: 7px 2px 7px 7px;
+}
+
+.incoming_message .time {
+    padding: 1px 2px 10px 7px;
+    float: right;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.incoming_message p {
+    background-color: chartreuse;
+    height: auto;
+    padding: 7px 2px 7px 7px;
+    border-radius: 5px;
+}
+
+.message_write {
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message_write textarea {
+    width: 95%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.message_write button {
+    width: 5%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(202, 253, 151);
+}
+
+.message_write button i {
+    font-size: 1.5rem;
+    color: rgb(67, 129, 5);
+}
+
+@media(max-width:700px) {
+    .navMenu {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        margin: 10px;
+    }
+    .hamburger i {
+        font-size: 1.5rem;
+    }
+    .section1 {
+        display: none;
+    }
+    .section2 {
+        width: 100%;
+    }
+    .main {
+        margin-top: 0;
+        height: 90vh;
+    }
+}

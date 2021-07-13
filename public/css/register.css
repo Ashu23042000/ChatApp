@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    height: 50px;
+    width: 100vw;
+    background-color: chartreuse;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar_wraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand h2 {
+    font-weight: 100;
+    margin: 8px 0 10px 0;
+}
+
+.navMenu ul li {
+    display: inline-block;
+    margin: 15px 10px 10px 0;
+}
+
+.navMenu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger_navMenu {
+    display: none;
+}
+
+.hamburger_navMenu {
+    display: none;
+    background-color: chartreuse;
+    padding: 1rem;
+}
+
+.hamburger_navMenu li {
+    list-style: none;
+    margin: 1rem;
+}
+
+.hamburger_navMenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.loginDiv {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.loginForm {
+    text-align: center;
+}
+
+.loginForm h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.loginForm input {
+    width: 80%;
+    margin-bottom: 1.5rem;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(206, 187, 187);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.loginForm button {
+    width: 80%;
+    height: 40px;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: chartreuse;
+    font-size: 1rem;
+}
+
+.option1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.option2 span {
+    margin-left: 3px;
+    color: teal;
+}
+
+.hamburger_navMenu {
+    display: none;
+    background-color: chartreuse;
+    padding: 1rem;
+}
+
+.hamburger_navMenu li {
+    list-style: none;
+    margin: 1rem;
+}
+
+.hamburger_navMenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width:700px) {
+    .navbar {
+        height: 45px;
+        background-color: chartreuse;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .navMenu {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    .brand {
+        width: 80%;
+        margin: 0 0 0 10px;
+    }
+    .brand h1 {
+        font-size: 25px;
+    }
+    .hamburger {
+        display: block;
+        width: 20%;
+        margin: 0.6rem 0 0.6rem 5rem;
+    }
+    .hamburger i {
+        font-size: 1.5rem;
+    }
+    .loginDiv {
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+        width: 90%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid rebeccapurple; */
+    }
+    .loginForm {
+        text-align: center;
+    }
+    .loginForm h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .loginForm input {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        height: 35px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(206, 187, 187);
+        text-align: center;
+        font-size: 1rem;
+    }
+    .loginForm button {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 1rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: chartreuse;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    .option1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .option2 span {
+        margin-left: 3px;
+        color: teal;
+    }
+}
