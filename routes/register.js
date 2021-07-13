@@ -7,7 +7,7 @@ router.get("/", (req, res) => {
     if (req.session.user) {
         res.redirect("/");
     } else {
-        res.render("login");
+        res.render("register");
     }
 });
 
