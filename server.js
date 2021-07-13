@@ -11,6 +11,7 @@ const flash = require("express-flash");
 const mongoDbStore = require("connect-mongo");
 const Emitter = require("events")
 
+const port = process.env.PORT || 5500;
 
 // session config-----
 
@@ -39,8 +40,8 @@ app.set("eventEmitter", eventEmitter);
 
 // server listening-----
 
-http.listen(process.env.PORT, () => {
-    console.log(`App listening on port ${process.env.PORT}`);
+http.listen(port, () => {
+    console.log(`App listening on port ${port}`);
 });
 
 // view engine config---------------------
